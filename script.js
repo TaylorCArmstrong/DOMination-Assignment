@@ -26,12 +26,16 @@ const quizData = [
 
 //How to load the question on the page
 
+const currentQuestion = quizData[0];
+
 currentQuestion.options.forEach((option, index) => {
-    const optionButton =
-    document.createElement('button');
+    const optionButton = document.createElement('button');
         optionButton.textContent = option;
         optionButton.addEventListener('click', () => selectOption(index));
+   
+    const optionsContainer = document.getElementById("options-container");
         optionsContainer.appendChild(optionButton);
 
-});
+}
+);
 
