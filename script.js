@@ -49,6 +49,7 @@ function loadQuestion() {
     currentQuestion.options.forEach((option, index) =>{
         const button = document.createElement('button');
         button.classList.add('option-button');
+        button.innerText = option;
         button.addEventListener('click', () => {
             selectedOption = index;
             nextButton.disabled = false;
