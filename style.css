@@ -2,12 +2,32 @@ body {
     background-color: rgb(240, 240, 240);
 }
 
+.option-button {
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    margin: 8px 0;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: lightgray;
+    color:black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option-button:hover {
+    background-color: #e0e0e0;
+}
+
 #quiz-container, 
 #score-container {
     display: flex;
     justify-content: center;
     background-color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
      padding: 20px;
      margin: 50px auto;
      margin-left: 90px;
