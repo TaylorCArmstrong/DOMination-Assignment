@@ -66,19 +66,34 @@ function highlightSelection(selectedIndex) {
     });
 }
 
+function markAnswers() {
+  const buttons = document.querySelectorAll('.option-button');
+  const correct = quizData[currentIndex].answer;
+
+  buttons.forEach((btn,idx) => {
+    btn.style.backgroundColor = idx === correct ? '#2ecc71' : '#e74c3c';
+  })
+}
+
 // Handle next question
 nextButton.addEventListener('click', () => {
+  markAnswers();
+
   if (selectedOption === quizData[currentIndex].answer) {
     score++;
   }
 
-  currentIndex++;
-  if (currentIndex < quizData.length) {
-    loadQuestion();
-  } else {
-    showResults();
-  }
+  
+  setTimeout(() => {
+    currentIndex++;
+    if (currentIndex < quizData.length) {
+      loadQuestion();
+    } else {
+      showResults();
+    }
+  }, 1000); 
 });
+
 
 // Show final score
 function showResults() {
