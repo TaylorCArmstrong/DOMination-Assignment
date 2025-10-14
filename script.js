@@ -35,7 +35,9 @@ let selectedOption = 0;
 const questionText = document.getElementById("question-text");
 const optionsContainer = document.getElementById("options-container");
 const nextButton = document.getElementById("next-button");
-const resultContainer = document.getElementById("score-text");
+const resultContainer = document.getElementById("score-container"); // the whole score section
+const scoreText = document.getElementById("score-text"); // just the text inside it
+
 
 //How to load the question on the page
 
@@ -102,6 +104,19 @@ function showResults() {
   resultContainer.style.display = "block";
   scoreText.textContent = `${score} out of ${quizData.length}`;
 }
+
+
+
+document.getElementById("restart-button").addEventListener("click", () => {
+  currentIndex = 0;
+  score = 0;
+  document.getElementById("score-container").style.display = "none";
+  document.getElementById("quiz-container").style.display = "block";
+  loadQuestion();
+});
+
+
+
 
 // Start quiz
 loadQuestion();
