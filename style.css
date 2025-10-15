@@ -27,8 +27,8 @@ h2 {
     font-size: 1.2rem;
      padding: 20px;
      margin: 50px auto;
-     margin-left: 800px;
-     margin-right: 800px;
+     margin-left: 400px;
+     margin-right: 400px;
      border-radius: 8px;
      box-shadow: 16px black;
      border: 3px solid rgb(9, 11, 72);
@@ -104,6 +104,35 @@ h2 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+
+#score-text {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    background-color: #aabd88;
+    margin-left: 700px;
+    margin-right: 700px;
+}
+
+#button-restart {
+    display: flex;
+    justify-content: center;
+}
+
+#restart-button {
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    margin: 8px 0;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: lightgray;
+    color:black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 #question-container
