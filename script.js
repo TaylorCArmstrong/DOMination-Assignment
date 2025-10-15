@@ -111,7 +111,7 @@ document.getElementById("restart-button").addEventListener("click", () => {
   currentIndex = 0;
   score = 0;
   document.getElementById("score-container").style.display = "none";
-  document.getElementById("quiz-container").style.display = "block";
+  document.getElementById("quiz-container").style.display = "flex";
   loadQuestion();
 });
 
