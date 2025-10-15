@@ -104,6 +104,8 @@ h2 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 
 #score-text {
