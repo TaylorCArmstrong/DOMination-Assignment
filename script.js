@@ -21,6 +21,11 @@ const quizData = [
         question: "What is the 4th day of the week?",
         options: ["Sunday","Wednesday","Friday","Tuesday"],
         answer: 1
+    },
+    {
+        question: "Which direction does the sun rise?",
+        options: ["North", "East", "South", "West"],
+        answer: 1
     }
 ];
 
