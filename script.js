@@ -40,8 +40,8 @@ let selectedOption = 0;
 const questionText = document.getElementById("question-text");
 const optionsContainer = document.getElementById("options-container");
 const nextButton = document.getElementById("next-button");
-const resultContainer = document.getElementById("score-container"); // the whole score section
-const scoreText = document.getElementById("score-text"); // just the text inside it
+const resultContainer = document.getElementById("score-container"); 
+const scoreText = document.getElementById("score-text"); 
 
 
 //How to load the question on the page
@@ -123,6 +123,6 @@ document.getElementById("restart-button").addEventListener("click", () => {
 
 
 
-// Start quiz
+// Starts the quiz
 loadQuestion();
 
